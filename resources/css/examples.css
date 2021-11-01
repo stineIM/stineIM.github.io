@@ -1,0 +1,27 @@
+#yellowBox {
+    padding:20px; 
+    margin-bottom: 30px; 
+    background-color: yellow; 
+    height: 150px; 
+    width: 200px; 
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#exampleList {
+    list-style: none;
+}
+
+#exampleListSquare {
+    list-style: square;
+}
+
+#exampleListCustom {
+    list-style:disc;
+    list-style-image: url('../images/test.png');
+}
+
+#changeBox {
+    background-color: blue; 
+    height: 150px; 
+    width: 200px; 
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #f4f4f2;
+	margin:0px;
+}
+
+main {
+    min-height:700px;
+}
+.container-sm {
+    max-width: 950px;
+}
+
+footer {
+	height: 150px; 
+    background-color: rgb(107, 139, 139);
+    position:initial;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center; 
+	margin-top:50px;
+}
+
+.col a {
+    color: black; 
+    text-decoration: none;
+}
+
+
+footer p {
+	padding:40px;
+}
+
+.header1 {
+    background-color: rgb(47, 79, 79);
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+#jumboheader {
+    color:white;
+    padding: 20px; 
+}
+
+.carousel-item img {
+    max-height: 350px;
+    width: auto;
+}
+
+.frontBox {
+    font-size: 1.75rem; 
+    display:flex; 
+    padding:20px; 
+    height:200px; 
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+#htmlBox, #htmlHeader{
+    background-color:tomato; 
+}
+
+#cssBox, #cssHeader{
+    background-color:cadetblue;
+}
+
+#jsBox, #jsHeader {
+    background-color:peru;
+}
+
