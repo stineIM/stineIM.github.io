@@ -1,0 +1,20 @@
+.exer a {
+    color: white;
+    transition: 0.3s;
+}
+
+.exer a:hover {
+    color: #0084a5;
+}
+
+hr {
+    border-top: 1px solid #0084a5;
+}
+
+
+.task-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+}

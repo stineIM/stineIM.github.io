@@ -1,3 +1,64 @@
+main {
+    color: white;
+}
+
+footer {
+    display: inline-block;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.quick-links {
+    position:fixed;
+}
+
+.quick-links .active {
+    font-weight: bold;
+}
+
+.quick-links .sublink {
+    margin-left: 1.5rem;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.shortcuts a{
+    text-decoration: none;
+    color: #6bd0ea
+}
+
+.quick-links ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 1rem;
+}
+
+.grid-content {
+    width: 80%;
+    float:right;
+}
+
+.subjectBox {
+    background-color: aliceblue;
+    color: black;
+    padding:20px;
+}
+
+.linkBox {
+    padding:20px; 
+    background-color: #6bd0ea;
+    color: white;
+    float:right;
+}
 #yellowBox {
     padding:20px; 
     margin-bottom: 30px; 

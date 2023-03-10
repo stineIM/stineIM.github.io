@@ -17,7 +17,25 @@ navn = fornavn + " " +  etternavn;
 
 console.log(navn); // Skriver ut Anders Karlsen 
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////
+
+function displayClock() {
+    const today = new Date; 
+    const hours = today.getHours(); 
+    const minutes = today.getMinutes(); 
+
+    // Dersom minuttene er mindre enn 10, må me legge til ein 0 foran, slik at formatet blir mm
+    if (minutes < 10) {
+        minutes = "0"+minutes;
+    }
+    document.getElementById("clock").innerText = hours + ":" + minutes; 
+}
+
+displayClock();
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 function changeColor() {
     document.getElementById("changeBox").style.backgroundColor = "red";
@@ -46,17 +64,29 @@ function promptBox() {
 //////////////////////////////////////////////////////////////////////////////////////
 
 function ifElse() {
-    var number1 = document.getElementById("number1").value; 
-    var number2 = document.getElementById("number2").value; 
+    let number1 = document.getElementById("number1").value; 
+    let number2 = document.getElementById("number2").value; 
     
     if (number1 > number2) {
-        console.log("Talet 1 er høgare enn tal 2");
+        alert("Talet 1 er høgare enn tal 2");
+
+        // Nullstiller boksene
+        document.getElementById("number1").value = ''; 
+        document.getElementById("number2").value = '';
     }
     else if (number2 > number1) {
-        console.log("Talet 2 er høgare enn tal 1"); 
+        alert("Talet 2 er høgare enn tal 1"); 
+        
+        // Nullstiller boksene
+        document.getElementById("number1").value = ''; 
+        document.getElementById("number2").value = '';
     }
     else if (number1 == number2) {
-        console.log("Tallene er like"); 
+        alert("Tallene er like"); 
+
+        // Nullstiller boksene
+        document.getElementById("number1").value = ''; 
+        document.getElementById("number2").value = '';
     }
 }
 

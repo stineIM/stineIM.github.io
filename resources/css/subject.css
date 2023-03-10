@@ -1,0 +1,82 @@
+
+main {
+    max-width: 100rem;
+    margin-right: auto; 
+    margin-left: auto;
+    min-height: 10rem;
+  }
+
+  .grid-container-5 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+
+  .grid-container-5 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .grid-box {
+    border: 1px solid #0084a5; 
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .box-content {
+    display: none;
+  }
+
+  .box-header:hover + .box-content {
+    display:block
+  }
+  .active {
+    display:block;
+  }
+
+  .box-header {
+    background-color: rgba(2, 32, 70,0.6);
+    border: 1px solid gray;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+
+  .grid-box:hover {
+    background-color: rgba(255,255,255,0.9);;
+  }
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: 70% 30%;
+    grid-gap: 3rem;
+  }
+  
+  .grid-container a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .grid-item-box {
+    width: 100%;
+    padding-top: 5rem; 
+    padding-bottom: 5rem; 
+    background-color: #0084a5;
+    color:white;
+  }
+  
+  .blue-box {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #022046;
+    border-radius:10px;
+    padding:1rem;
+    color: white;
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+
