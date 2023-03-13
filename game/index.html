@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gjett tallet</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Gjett tallet mellom 1 og 100</h1>
+  <div class="box">
+    <input type="text" id="guess">
+    <button id="startOver" onclick="startOver()">Start på nytt </button>
+    <button id="start" onclick="checkGuess()">Gjett</button>
+    <p id="result"></p>
+    <p id="info"></p>
+    <p id="guesses"></p>
+  </div>
+  <div class="firework" id="fw1"></div>
+  <div class="firework" id="fw2"></div>
+  <div class="firework" id="fw3"></div>
+  <div id="groupresults">
+    <h1>Resultater: </h1>
+    <h3 id="gr1">Gruppe 1: </h3>
+    <h3 id="gr2">Gruppe 2: </h3>
+  </div>
+  <div>
+    <h1 id="winner"></h1>
+  </div>
+
+  <script type="text/javascript" src="js/game.js">
+  </script>
+</body>
+
+</html>
