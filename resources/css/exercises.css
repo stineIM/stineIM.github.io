@@ -1,6 +1,6 @@
 .exer a {
-    color: white;
     transition: 0.3s;
+    color: #706fd3;
 }
 
 .exer a:hover {

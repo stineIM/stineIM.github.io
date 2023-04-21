@@ -1,5 +1,5 @@
-main {
-    color: white;
+img {
+    max-width: 100%;
 }
 
 footer {
@@ -12,7 +12,8 @@ footer {
 }
 
 .quick-links {
-    position:fixed;
+    position: fixed;
+    margin-top: 20px;
 }
 
 .quick-links .active {
@@ -25,12 +26,11 @@ footer {
 
 .quick-links a {
     text-decoration: none;
-    color: white;
 }
 
-.shortcuts a{
+.shortcuts a {
     text-decoration: none;
-    color: #6bd0ea
+    color: #706fd3;
 }
 
 .quick-links ul {
@@ -44,27 +44,42 @@ footer {
 
 .grid-content {
     width: 80%;
-    float:right;
+    float: right;
+}
+
+.subject {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.subjectTitle {
+    background-color: #d3d1ed;
+    padding: 2px 20px 2px 20px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .subjectBox {
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     color: black;
-    padding:20px;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 20px;
+
 }
 
 .linkBox {
-    padding:20px; 
+    padding: 20px;
     background-color: #6bd0ea;
     color: white;
-    float:right;
+    float: right;
 }
+
 #yellowBox {
-    padding:20px; 
-    margin-bottom: 30px; 
-    background-color: yellow; 
-    height: 150px; 
-    width: 200px; 
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: yellow;
+    height: 150px;
+    width: 200px;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
@@ -77,12 +92,12 @@ footer {
 }
 
 #exampleListCustom {
-    list-style:disc;
+    list-style: disc;
     list-style-image: url('../images/test.png');
 }
 
 #changeBox {
-    background-color: blue; 
-    height: 150px; 
-    width: 200px; 
+    background-color: blue;
+    height: 150px;
+    width: 200px;
 }

@@ -1,103 +1,250 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Heim</title>
-	<link href="../../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../../resources/css/main.css">
-    <link rel="stylesheet" href="../../resources/css/examples.css">
+	<link rel="stylesheet" href="../../resources/css/examples.css">
+	<style>
+		.grid-container-example {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			background-color: #2196F3;
+			padding: 10px;
+		}
 
+		.grid-item-example {
+			background-color: rgba(255, 255, 255, 0.8);
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="../../index.html">IM-SVGS</a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
-			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="../../index.html">Heim</a>
-			  </li>
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  Eksempler
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<li><a class="dropdown-item" href="../examples/">HTML</a></li>
-				  	<li><a class="dropdown-item" href="../examples/">CSS</a></li>
-				  	<li><a class="dropdown-item" href="../examples/">JavaScript</a></li>
-				</ul>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="https://www.hordaland.no/nn-NO/skole/stordvgs/studietilbud/informasjonsteknologi-og-medieproduksjon/" target="_blank">Om oss</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="../contact.html">Kontakt oss</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-	<main>
-
-		<div style="background-image: url('../../resources/images/technology-4750253_1920.jpg');" class="jumbotron jumbotron-fluid">
-			<div class="container" id="jumboheader">
-			  <h1 class="display-4">Konseptutvikling og programmering</h1>
-			  <p class="lead">IM - Stord vidaregåande skule</p>
+	<div class="main-content">
+		<div class="navigation">
+			<div class="logo">
+				<span class="nav-item" id="logo">
+					<a id="logo" href="../index.html"><img src="../../resources/images/im_logo_ligg_sv_purple.jpg"></a>
+				</span>
 			</div>
-		</div>	
+			<div class="links">
+				<span class="nav-item">
+					<a href="../index.html">Heim</a>
+				</span>
+				<span class="nav-item">
+					<a href="../index.html">Vg1</a>
+				</span>
+				<span class="nav-item">
+					<a href="../vg2/index.html">Vg2</a>
+				</span>
+				<span class="nav-item">
+					<a href="../about.html">Info</a>
+				</span>
+
+			</div>
 		</div>
-		<div class="container-sm">
-			<div class="row">
-				<div class="col">
-				
+		<main>
+
+			<div class="grid-container">
+				<div class="quick-links">
+					<div class="shortcuts">
+						<a href="../../index.html">Framside</a> > <a href="../index.html">Vg1</a> > <a
+							class="active">CSS</a>
+					</div>
+					<ul>
+						<li>
+							<a href="#headers">1. Overskrifter</a>
+						</li>
+						<li>
+							<a href="#images">2. Bilete</a>
+						</li>
+						<li>
+							<a href="#links">3. Lenker</a>
+						</li>
+						<li>
+							<a href="#tables">4. Tabellar</a>
+						</li>
+						<li>
+							<a href="#forms">5. Forms</a>
+						</li>
+						<li>
+							<a href="#lists">6. Lister</a>
+						</li>
+						<li>
+							<a href="#divs">7. div</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="grid-content">
+					<h1>Eksempler CSS</h1>
+					<div class="subject" id="headers">
+						<div class="subjectTitle">
+							<h1>box-shadow</h1>
+						</div>
+						<div class="subjectBox">
+
+							<a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.php" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<div>
+								<div id="yellowBox">
+									<a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp">Box-shadow</a>
+									<br>
+									<a href="https://www.w3schools.com/tags/tag_div.ASP">div-element</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="subject" id="images">
+						<div class="subjectTitle">
+							<h1>list-style</h1>
+						</div>
+
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/cssref/pr_list-style.asp" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<h2>HTML:</h2>
+							<img src="../../resources/images/list-style2.JPG">
+							<h2>CSS:</h2>
+							<img src="../../resources/images/list-style.JPG">
+							<h2>Resultat:</h2>
+							<h2>none:</h2>
+							<ul id="exampleList">
+								<li>Dette er eit element</li>
+								<li>Dette er eit anna</li>
+								<li>Dette er eit tredje listeelement</li>
+							</ul>
+							<h2>square</h2>
+							<ul id="exampleListSquare">
+								<li>Dette er eit element</li>
+								<li>Dette er eit anna</li>
+								<li>Dette er eit tredje listeelement</li>
+							</ul>
+							<h2>list-style-image</h2>
+							<ul id="exampleListCustom">
+								<li>Dette er eit element</li>
+								<li>Dette er eit anna</li>
+								<li>Dette er eit tredje listeelement</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="subject" id="links">
+						<div class="subjectTitle">
+							<h1>Grid-layout</h1>
+						</div>
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<h2>HTML:</h2>
+							<img src="../../resources/images/exGrid2.JPG">
+							<h2>CSS:</h2>
+							<img src="../../resources/images/exGrid.JPG">
+							<h2>Resultat: </h2>
+							<img src="../../resources/images/exGrid3.JPG">
+
+							<p> For å lage en grid, treng ein eit <span class="code">&lt;div></span> element. </p>
+							<p> Dette må ein sette css til å vere <span class="code">display: grid</span></p>
+							<p> Ein må også definere antall kolonner og evt rader.</p>
+							<p> For å gjere det enkelt, definerer me <span class="code">grid-template-columns</span></p>
+							<p> Denne kan man sette til å vere for eksempel: <span class="code">grid-template-columns:
+									auto auto auto;</span></p>
+							<p> Då vil me få tre kolonner me kan legge til informasjon i. For eksempel bilde / tekst /
+								lenker etc.</p>
+							<p> Desse kolonnene vil automatisk angi størrelse etter kva innhaldet treng.</p>
+							<p> Me kan også definere størrelsen til kolonnene. </p>
+							<p> Denne kan man sette til å vere for eksempel: <span class="code">grid-template-columns:
+									20% 50% 30%;</span></p>
+							<p> I dette tilfelle vil me få ei kolonne som er 20% av bredden på "hoved-&lt;div>
+								elementet. Ei kolonne på 50% og til slutt ei på 30%. </p>
+							<p> Me kan ha færre eller fleire kolonner, alt etter kva me treng. Men maks bredde kan vere
+								100%</p>
+							<h2>Eksempel:</h4>
+								<div class="grid-container-example">
+									<div class="grid-item-example">1</div>
+									<div class="grid-item-example">2</div>
+									<div class="grid-item-example">3</div>
+									<div class="grid-item-example">4</div>
+									<div class="grid-item-example">5</div>
+									<div class="grid-item-example">6</div>
+									<div class="grid-item-example">7</div>
+									<div class="grid-item-example">8</div>
+									<div class="grid-item-example">9</div>
+								</div>
+								<h2>Kode:</h2>
+								<p class="code">&lt;style> </p>
+								<p class="code">&emsp;.grid-container { </p>
+								<p class="code">&emsp;&emsp;display: grid; </p>
+								<p class="code">&emsp;&emsp;grid-template-columns: auto auto auto;</p>
+								<p class="code">&emsp;&emsp;background-color: #2196F3; </p>
+								<p class="code">&emsp;&emsp;padding: 10px;</p>
+								<p class="code">&emsp;}</p>
+								<p class="code">&emsp;.grid-item { </p>
+								<p class="code">&emsp;&emsp;background-color: rgba(255, 255, 255, 0.8); </p>
+								<p class="code">&emsp;&emsp;border: 1px solid rgba(0, 0, 0, 0.8);</p>
+								<p class="code">&emsp;&emsp;padding: 20px; </p>
+								<p class="code">&emsp;&emsp;font-size: 30px;</p>
+								<p class="code">&emsp;&emsp;text-align: center;</p>
+								<p class="code">&emsp;}</p>
+								<p class="code">&lt;/style</p>
+								<p class="code">&lt;div class="grid-container">
+								<p class="code">&emsp;&lt;div class="grid-item"> 1 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 2 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 3 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 4 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 5 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 6 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 7 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 8 &lt;/div></p>
+								<p class="code">&emsp;&lt;div class="grid-item"> 9 &lt;/div></p>
+
+								<p class="code">&lt;/div></p>
+
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="links">
+
 				</div>
 			</div>
-			<div class="row justify-content-md-center" style="margin-top:20px;">
-				<h3 class="header1" id="cssHeader">CSS</h3>
-			</div>
-            <div>
-                <h3>Gul boks med skygge: </h3>
-                <div id="yellowBox">
-                    <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp">Box-shadow</a> <br>
-                    <a href="https://www.w3schools.com/tags/tag_div.ASP">div-element</a>
-                </div>
-            </div>
-            <div>
-                <h3>List-style: </h3> 
-                <a href="https://www.w3schools.com/cssref/pr_list-style.asp">List-style W3schools.com</a>
-                <h5>none:</h5>
-                <ul id="exampleList">
-                    <li>Dette er eit element</li>
-                    <li>Dette er eit anna</li>
-                    <li>Dette er eit tredje listeelement</li>
-                </ul>
-                <h5>square</h5>
-                <ul id="exampleListSquare">
-                    <li>Dette er eit element</li>
-                    <li>Dette er eit anna</li>
-                    <li>Dette er eit tredje listeelement</li>
-                </ul>
-                <h5>list-style-image</h5>
-                <ul id="exampleListCustom">
-                    <li>Dette er eit element</li>
-                    <li>Dette er eit anna</li>
-                    <li>Dette er eit tredje listeelement</li>
-                </ul>
-            </div>
-		
-				
-		</div>
+		</main>
+	</div>
+	<footer>
+		<p>&#169; <span id="year"></span> Stine Jonassen Føyen </p>
+	</footer>
+
+	<script type="text/javascript" src="../../resources/js/year.js"></script>
+
+
+
+	</div>
 	</main>
-	
+
 	<footer>
 		<p>&#169; 2021 Stine Jonassen Føyen </p>
 	</footer>
 
 	<script type="text/javascript" src="../../resources/js/bootstrap/bootstrap.min.js"></script>
 </body>
+
 </html>

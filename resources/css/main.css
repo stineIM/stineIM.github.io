@@ -3,13 +3,19 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #022046;
-  margin:0;
-  color: white;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: monospace;
 }
 
 .header {
-  padding: 10rem;
+  padding: 0rem 10rem 10rem 10rem;
   text-align: center;
 }
 
@@ -22,11 +28,11 @@ body {
   font-weight: lighter;
 }
 
-.main-content{
+.main-content {
   max-width: 100rem;
-  margin-right: auto; 
+  margin-right: auto;
   margin-left: auto;
-  min-height: 10rem;
+  min-height: 8rem;
 }
 
 footer {
@@ -40,11 +46,10 @@ footer {
 }
 
 .navigation {
-  width: 100%; 
-  color: #f5f5f7; 
-  padding-top:40px;
-  padding-bottom: 5rem;
-  display:inline-block;
+  width: 100%;
+  color: #333;
+  padding-top: 40px;
+  display: inline-block;
 }
 
 .links {
@@ -52,7 +57,7 @@ footer {
 }
 
 .nav-item a {
-  color: #b9b9b9; 
+  color: #333;
   text-decoration: none;
   transition: 0.3s;
   font-size: 1.125rem;
@@ -61,43 +66,51 @@ footer {
 }
 
 .nav-item a:hover {
-  color: #0084a5;
+  color: #b3b3b3;
 }
 
 .logo {
-  float:left;
+  float: left;
 }
 
 #logo {
   font-size: 40px;
-  color:#0084a5;
+  color: #706fd3;
   font-weight: bold;
-  padding:0px;
+  padding: 0px;
 }
 
-/******************************************/ 
+#logo img {
+  max-height: 100px;
+}
+
+.subjectHeader {
+  font-size: 50px;
+}
+
+/******************************************/
 
 
 
 footer {
-	height: 50px; 
-    background-color:#133b6f; 
-    position:initial;
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    text-align: center; 
-	margin-top:50px;
+  height: 50px;
+  background-color: #133b6f;
+  position: initial;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #countdown {
-    font-size: 30px;
-    border: 1px solid darkslategray;
-    background-color:rgb(107, 139, 139);
-    color: white;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:40px;
+  font-size: 30px;
+  border: 1px solid darkslategray;
+  background-color: rgb(107, 139, 139);
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
