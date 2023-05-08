@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Heim</title>
 	<link rel="stylesheet" href="../../resources/css/main.css">
+	<link rel="stylesheet" href="../../resources/css/subject.css">
+
 	<link rel="stylesheet" href="../../resources/css/examples.css">
+
 </head>
 
 <body>
@@ -36,6 +39,7 @@
 		<main>
 
 			<div class="grid-container">
+				<!--
 				<div class="quick-links">
 					<div class="shortcuts">
 						<a href="../../index.html">Framside</a> > <a href="../index.html">Vg1</a> > <a
@@ -66,14 +70,106 @@
 					</ul>
 
 				</div>
+				-->
 				<div class="grid-content">
 					<h1>Eksempler HTML</h1>
+					<div>
+						<div class="subheader">
+							<div class="boxes">
+								<a href="examples/html.html">
+									<div class="grid-box">
+										Datatyper og variabler
+									</div>
+								</a>
+								<a href="examples/css.html">
+									<div class="grid-box">
+										Endre HTML element
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										If/else
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										Python
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										Power Apps
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										Personvern
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										Databaser
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										Prototyping
+									</div>
+								</a>
+								<a href="examples/js.html">
+									<div class="grid-box">
+										Dokumentasjon
+									</div>
+								</a>
+								<a href="examples/environment.html">
+									<div class="grid-box">
+										Utviklingsmiljø
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="subject" id="variables">
+
+						<div class="subjectTitle">
+							<h1>Datatypar og variablar</h1>
+						</div>
+						<div class="subjectBox">
+							
+								<div class="linkBox">
+									<p><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">w3schools</a></p>
+									<p><a href="https://github.com/stineIM/stineIM.github.io/blob/master/resources/js/variables.js" target="_blank">variables.js</a></p>
+								</div>
+							
+							<div>
+								<p>Ein variabel er eit navn som representerer en verdi.</p>
+								<p>Variabel med tal (number) som datatype:</p>
+								<p class="code">let number = 1; </p>
+								<p>Variabel med tekst (string) som datatype:</p>
+								<p class="code">let firstName = "Stephen";</p>
+								<img src="../../resources/images/codesnippets/rulesvariables.png">
+								<h2>Aritmetiske operatorar (matematikk)</h2>
+								<p>Dei fire rekneartane som me kjenner frå matematikken, kallar me for aritmetiske
+									operatorar.</p>
+								<p>Operatorane som tilsvarer dei fire rekneartane, er <b>+</b> (pluss), <b>-</b>
+									(minus), <b>*</b> (gange) og <b>/</b> (dele)</p>
+								<img src="../../resources/images/codesnippets/var.jpg">
+								<p>Det er god praksis å bruke mellomrom på kvar side av operatoren, det gjer koden lett
+									å lese.</p>
+								<img src="../../resources/images/codesnippets/var2.JPG">
+							</div>
+						</div>
+					</div>
+
 					<div class="subject" id="changeHTML">
-						<h1>Endre HTML element</h1>
+						<div class="subjectTitle">
+							<h1>Endre HTML element</h1>
+						</div>
 						<div class="subjectBox">
 							<ul>
 								<li>
-									<a href="https://github.com/stineIM/stineIM.github.io/blob/master/resources/js/variables.js"
+									<a href="https://github.com/stineIM/stineIM.github.io/blob/master/resources/js/	"
 										target="_blank">
 										<h1>Koden finn du på Github</h1>
 									</a>
@@ -110,54 +206,153 @@
 
 					</div>
 					<div class="subject" id="ifelse">
-						<h1>If-else</h1>
+
+						<div class="subjectTitle">
+							<h1>If-else</h1>
+						</div>
 						<div class="subjectBox">
 							<a href="https://www.w3schools.com/js/js_if_else.asp">
 								<div class="linkBox">
 									w3schools
 								</div>
 							</a>
-							<p>Sjekk kva tal som er størst</p>
 							<div>
-								<label>Tall 1</label> <br>
-								<input type="number" id="number1">
+								<img src="../../resources/images/codesnippets/ifelse.JPG">
+								<p>Her har me to variablar, <span class="code">usrNumber</span> og <span class="code">compNumber</span></p>
+								<p>Ei if-else setning inneheld anten ei berre ei if-betingelse og / eller fleire if/else betingelser. </p>
+								<p>Det er alltid den første betingelsen som treff som gjelder. </p>
+								<p>Det vil seie at all kode som er i dei andre else/if setningane ikkje blir kjørt. </p>
+								<h2>Eksempel: </h2>
+								<img src="../../resources/images/codesnippets/ifelse2.JPG">
+								<p>Her vil berre ein av desse tekstane vise i HTML-elementet med <span class="code">id = header</span></p>
+
 							</div>
-							<div>
-								<label>Tall 2</label> <br>
-								<input type="number" id="number2">
-							</div>
-							<br>
-							<button onclick="ifElse();">Sjekk</button>
+							
+						</div>
+					</div>
+					<div class="subject" id="forloops">
+
+						<div class="subjectTitle">
+							<h1>For-loops</h1>
+						</div>
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/js/js_if_else.asp">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+
 						</div>
 					</div>
 					<div class="subject" id="arrays">
-						<h1>Arrays</h1>
+						<div class="subjectTitle">
+							<h1>Arrays</h1>
+						</div>
 						<div class="subjectBox">
 							<a href="https://www.w3schools.com/js/js_arrays.asp">
 								<div class="linkBox">
 									w3schools
 								</div>
 							</a>
-
-
+							<div>
+								<p>Arrays er "lister" som inneheld mange verdier.</p>
+								<p>Ein oppretter ein array ved å lage ein variabel og sette den til å vere []</p>
+								<p><b>Eksempel:</b></p>
+								<p class="code">let temperatures = [10,12,15,12,14,13,9]</p>
+								<p>På denne måten kan ein lagre fleire verdiar i ein variabel, slik at ein ikkje treng å
+									opprette ein variabel for kvar verdi i arrayen.</p>
+								<img src="../../resources/images/codesnippets/array.JPG">
+								<p>Eitt array kan innehalde mange datatypar, tal, tekst, objekt osv.</p>
+								<h2>Array metoder</h2>
+								<p>Arrays inneheld ein del metodar som ein kan bruke for å gjer endringar i arrayen.
+								</p>
+								<img src="../../resources/images/codesnippets/array2.png">
+							</div>
 						</div>
 					</div>
 
 					<div class="subject" id="objects">
-						<h1>Objekter</h1>
+						<div class="subjectTitle">
+							<h1>Objekter</h1>
+						</div>
 						<div class="subjectBox">
 							<a href="w3schools.com/js/js_objects.asp">
 								<div class="linkBox">
 									w3schools
 								</div>
 							</a>
+							<div>
+								<p>Objekt er variabler som inneheld fleire egenskaper. </p>
+								<p><b>Eksempel:</b></p>
+								<img src="../../resources/images/codesnippets/object.jpg">
+								<p>Her vert det oppretta ein variabel "bil" som har egenskapane "merke", "farge" og
+									"aar"</p>
+								<p>Ein array kan også innehalde objekter. </p>
+								<p><b>Eksempel:</b></p>
+								<img src="../../resources/images/codesnippets/object2.jpg">
+								<p>Arrayet "biler" inneheld 5 element. </p>
+								<p class="code">biler.length // Svaret er 5 </p>
+							</div>
 						</div>
 					</div>
 
 					<div class="subject" id="apis">
-						<h1>API</h1>
+						<div class="subjectTitle">
+							<h1>APIs</h1>
+						</div>
 						<div class="subjectBox">
+							<p>API står for <b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface.</p>
+							<p>A Web API is an application programming interface for the Web.</p>
+							<p>A Browser API can extend the functionality of a web browser.</p>
+							<p>A Server API can extend the functionality of a web server.</p>
+							<p>Eit API gjer data tilgjengeleg for andre.</p>
+							<p>Det finnes mange tredjepartsløsninger som har eit API tilgjengeleg.</p>
+							<p><b>Eksempel:</b></p>
+							<ul>
+								<li>Meta API</li>
+								<li>Twitter API</li>
+								<li>YouTube API</li>
+								<li>Vær API</li>
+								<li>Oslo bysykkel</li>
+							</ul>
+							<p>Dette gjer at me kan integrere desse løysingane i våre applikasjoner. </p>
+							<p>Me vil kanskje ha ein vær-widget på sida vår / appen vår som viser været der me er. </p>
+							<p>Kanskje me vil vise Twitter innlegg</p>
 
+							<h2>Ein måte å gjere det på: </h2>
+							<p>For å bruke API i JavaScript, kan ein gjere det på denne måten: </p>
+							<img src="../../resources/images/codesnippets/api.JPG">
+							<p>Her vert det brukt eit API med URL https://api.breakingbadquotes.xyz/v1/quotes</p>
+							<p>Dette APIet viser random quotes fra karakterer i TV-serien Breaking Bad</p>
+							<p>Ein kan hente ut kven som har sagt det og kva som blir sagt. </p>
+							<p>Dersom ein åpner linken i nettleseren ser det slik ut: </p>
+							<img src="../../resources/images/codesnippets/api2.JPG">
+							<p>Dette er i formatet JSON-fil</p>
+							<p><b>JSON</b> står for <b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation</p>
+							<p>Ei <b>JSON</b>-fil består av objekter</p>
+							<p>Ein kan sjå at dei liknar på objektene som ein oppretter i JavaScript</p>
+							<p>Det kan også skrives slik: </p>
+							<img src="../../resources/images/codesnippets/api3.JPG">
+							<p>Ein kan enkelt konvertere eit Excel-ark med informasjon og kolonner til ei JSON fil</p>
+							<p>Då kan ein bruke informasjon som ein har sjølv, dersom ein ikkje vil lagre informasjonen
+								direkte i koden (som ikkje er lurt!)</p>
+							<p><b>Eksempel</b></p>
+							<p>Dersom ein har ei Excel-fil som ser slik ut: </p>
+							<img src="../../resources/images/codesnippets/json1.JPG">
+							<p>Kan ein konvertere denne fila til ei JSON fil ved å bruke verktøy på nett. </p>
+							<p>Resultatet vert då: </p>
+							<img src="../../resources/images/codesnippets/json2.JPG">
+							<p>(Eg brukte dette: <a href="https://excel2json.io/">https://excel2json.io/</a> )</p>
+							<p>Dette kan man då lagre i ei JSON-fil. Filformatet er .json. Eksempel: "data.json"</p>
+							<h2>Hente ut data fra lokal .json fil</h2>
+							<p>Ein endrer berre på URL-en til APIet</p>
+							<p><b>Eksempel: </b></p>
+							<img src="../../resources/images/codesnippets/json3.JPG">
+							<p>Denne skriver ut alle sangene til konsoll.</p>
+							<h2>Hente ut info frå eitt objekt frå ei JSON fil:</h2>
+							<img src="../../resources/images/codesnippets/json4.jpg">
+							<p>Me må referere til eitt objekt, akkurat som i ein array ved å referere til index. [index]
+							</p>
 						</div>
 					</div>
 

@@ -1,117 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
-    </head>
+<head>
     <style>
-        #box {
-            background-color: darkslategrey;
-            color: white; 
+        main {
+            max-width: 1390px;
+            margin:auto;
+        }ø  
+        #icon {
+            max-width: 150px;
+            border-radius: 5px;
+        }
+
+        #quote {
+            background-color: #122;
+            color: white;
             padding: 20px;
-            justify-content: center;
-            text-align: center;
             width: 25%;
-            font-size: 25px;
+            text-align: center;
+            box-shadow: 5px 5px 8px 5px #888888;
+            border: 1px solid black;
+        }
         
-        }
-
-        #visittkort {
-            background-color: grey;
-            border: 2px solid darkslategrey;
-            color: white; 
-            padding: 20px;
-            width: 350px; 
-        }
-
-        .header {
-            color: #005fc9;
-            font-family:Arial, Helvetica, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-            padding-bottom: 40px;
-            font-size: x-large;
-        }
-        .infobox {
-            background-color: #005fc9;
-            color: white; 
-            padding: 0px 20px 20px 20px; 
-            margin-right:20px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        .infobox:hover {
-            background-color: rgba(0, 95,201,0.7);
-         
-        }
-
-        .infobox h1 {
-            text-align: center;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-        }
-
-
     </style>
-    <body>
-<!--
-        <div class="header">
-            <h1>Oslo bysykkel</h1>
-        </div>
-        
-       <div class="grid">
-        <div class="infobox" id="box1">
-            <h1 id="name1"></h1>
-            <p id="available1">Sykler ledig: </p>
-            <p id="docks1">Ledige plasser: </p>
-        </div>
-        <div class="infobox"  id="box2">
-            <h1 id="name2"></h1>
-            <p id="available2">Sykler ledig: </p>
-            <p id="docks2">Ledige plasser: </p>
-        </div>
-        <div class="infobox"  id="box3">
-            <h1 id="name3"></h1>
-            <p id="available3">Sykler ledig: </p>
-            <p id="docks3">Ledige plasser: </p>
-        </div>
-        <div class="infobox" id="box4">
-            <h1 id="name4"></h1>
-            <p id="available4">Sykler ledig: </p>
-            <p id="docks4">Ledige plasser: </p>
-        </div>
-        <div class="infobox" id="box5">
-            <h1 id="name5"></h1>
-            <p id="available5">Sykler ledig: </p>
-            <p id="docks5">Ledige plasser: </p>
-        </div>
-        <div class="infobox"  id="box6">
-            <h1 id="name6"></h1>
-            <p id="available6">Sykler ledig: </p>
-            <p id="docks6">Ledige plasser: </p>
-        </div>
-        <div class="infobox"  id="box7">
-            <h1 id="name7"></h1>
-            <p id="available7">Sykler ledig: </p>
-            <p id="docks7">Ledige plasser: </p>
-        </div>
-        <div class="infobox" id="box8">
-            <h1 id="name8"></h1>
-            <p id="available8">Sykler ledig: </p>
-            <p id="docks8">Ledige plasser: </p>
-        </div>
+</head>
 
-       </div>
-        
-        -->
-        <img id="icon">
-        <h2 id="joke"></h2>
-        <script src="resources/js/api.js"></script>
-       
-    </body>
+<body>
+    <main>
+        <div id="quote">
+            <div id="img">
+                <img id="icon">
+            </div>
+            <div id="text">
+                <h2 id="joke"></h2>
+                <p id="author"></p>
+            </div>
+        </div>
+    </main>
+    <script src="resources/js/api.js"></script>
+</body>
+
 </html>

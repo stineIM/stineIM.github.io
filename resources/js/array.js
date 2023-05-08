@@ -13,12 +13,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 // Array som inneholder tallverdier
-
-let tallene = [
-    20, 
-    32, 
-    12, 
-    54, 26];
+let tallene = [20, 32, 12, 54, 26];
 
 // Array som inneholder tekstverdier
 
@@ -37,6 +32,11 @@ let skurk = skurker[0]; // Kva blir svaret her?
 
 skurker[2] = "Goldfinger"; 
 
+skurker.length; // Antall elementer i arrayen = 3
+
+
+
+
 // Ein array er kan også kalles eit objekt 
 
 const person = ["John", "Doe", 46]; 
@@ -52,6 +52,8 @@ let person2 = {
 
 console.log(person2.fornavn + " " + person2.etternavn);
 
+
+
 let ansatte = [
     {fornavn: "John", etternavn: "Doe", alder: 46},
     {fornavn: "Anna", etternavn: "Smith", alder: 32},
@@ -59,3 +61,21 @@ let ansatte = [
 ]
 
 console.log(ansatte[1].fornavn);
+
+let bil = {
+    merke: "BMW",
+    farge: "Grønn", 
+    aar: 1983
+}; 
+
+// Array med objekter
+
+let biler = [
+    {merke: "BMW", farge: "Grønn", aar: 1983},
+    {merke: "Volvo", farge: "Rød", aar: 1972},
+    {merke: "Mercedes", farge: "Grå", aar: 1995},
+    {merke: "Nissan", farge: "Svart", aar: 1997}, 
+    {merke: "Audi", farge: "Blå", aar: 1987}
+]; 
+
+

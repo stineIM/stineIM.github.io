@@ -1,7 +1,28 @@
+
+let sum = 4 + 8; 
+console.log(sum); // Skriver ut 12
+
+let diff = 9 - 6; 
+console.log(diff); // Skriver ut 3
+
+let prod = 8 * 7; 
+console.log(prod); // Skriver ut 56
+
+let kvot = 15 / 3; 
+console.log(kvot); // Skriver ut 5
+
+
+let children = 3; 
+let adults = 10; 
+let sodasPrGuest = 2; 
+let amountOfSodas = children + adults * sodasPrGuest; 
+console.log(amountOfSodas); // Skriver ut 24
+
+
 var number1 = 10; 
 var number2 = 20; 
 
-var sum = number1 + number2; 
+//var sum = number1 + number2; 
 
 console.log(sum); // skriver ut 30 
 

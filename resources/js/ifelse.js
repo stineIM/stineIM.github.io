@@ -1,4 +1,4 @@
-/* let usrNumber = 3; 
+let usrNumber = 3; 
 let compNumber = 10; 
 
 if(usrNumber == compNumber) {
@@ -11,7 +11,28 @@ else if (usrNumber > compNumber) {
 else {
     console.log("usrNumber er ikkje lik compNumber"); 
 }
-*/ 
+
+let header = document.getElementById("header");
+let date = new Date(); // Henter inn dato og kva klokka er no
+let hours = date.getHours(); // Henter inn 
+
+if (time >= 5 && time < 10) {
+    header.innerText = "God morgen"; 
+} else 
+if (time >= 10 && time < 15) {  
+    header.innerText = "God dag"; 
+} else 
+if (time >= 15 && time < 18) {
+    header.innerText = "God ettermiddag"; 
+} else 
+if (time >= 18) {
+    header.innerText = "God kveld"; 
+} else 
+if (time < 5) {
+    header.innerText = "God natt"; 
+}  
+
+
 // Enkel linje
 
 /* 
