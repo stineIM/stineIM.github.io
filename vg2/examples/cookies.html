@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heim</title>
+  <link rel="stylesheet" href="../../resources/css/main.css">
+  <link rel="stylesheet" href="../../resources/css/examples.css">
+  <script>
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      let user = getCookie("username");
+      if (user != "") {
+        alert("Welcome again " + user);
+      } else {
+        user = prompt("Please enter your name:", "");
+        if (user != "" && user != null) {
+          setCookie("username", user, 30);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="navigation">
+      <div class="logo">
+        <span class="nav-item" id="logo">
+          <a id="logo" href="../index.html"><img src="../../resources/images/im_logo_ligg_sv_purple.jpg"></a>
+        </span>
+      </div>
+      <div class="links">
+        <span class="nav-item">
+          <a href="../index.html">Heim</a>
+        </span>
+        <span class="nav-item">
+          <a href="../index.html">Vg1</a>
+        </span>
+        <span class="nav-item">
+          <a href="../vg2/index.html">Vg2</a>
+        </span>
+        <span class="nav-item">
+          <a href="../about.html">Info</a>
+        </span>
+
+      </div>
+    </div>
+    <main>
+
+      <div class="grid-container-nolinks">
+        <div class="quick-links-not-fixed">
+          <div class="shortcuts">
+            <a href="../../index.html">Framside</a> > <a href="../../vg2/index.html">Vg2</a> > <span>Cookies</span>
+          </div>
+        </div>
+        <div class="grid-content">
+
+          <h1 class="subjectHeader">Cookies</h1>
+          <div class="subject" id="variables">
+            
+            <div class="subjectTitle">
+              <h1>Cookies og informasjonskapsler</h1>
+            </div>
+            <div class="subjectBox">
+              <div class="linkBox" style="padding:0px 20px 0px 20px;">
+                <p><a href="" target="_blank">Kode</a></p>
+              </div>
+            
+              <p>En informasjonskapsel, ofte kalt cookie, er en liten tekstfil som lastes ned og lagres på brukers
+                datamaskin når brukeren åpner en nettside.</p>
+              <p>Informasjonskapselen brukes for eksempel til å lagre innloggingsdetaljer, registrere hvor brukeren
+                beveger seg rundt på nettstedet eller huske handlekurv i nettbutikker. </p>
+              <p>Den som står bak informasjonskapselen, altså den behandlingsansvarlige, kan tilpasse tjenestene sine ut
+                fra informasjonen som lagres.</p>
+              <p style="text-align:right"><b><i>Kilde:</b> <a
+                  href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/">Datatilsynet.no</a>
+                </i></p>
+            </div>
+          </div>
+          <div class="subject" id="variables">
+            <div class="subjectTitle">
+              <h1>Kode: </h1>
+            </div>
+            <div class="subjectBox">
+              <h1>Eksempel:</h1>
+              <h2>Sjekke cookie: </h2>
+              <p>I koden under sjekker man om nettleseren har en cookie som heter "username" </p>
+              <p>Dersom den ikke har det, oppretter man en ved hjelp av metoden <span class="code">setCookie()</span></p>
+              <p>Då får me opp ein alert-boks hvor brukeren får skrive inn navnet sitt. Denne blir lagret som variabelen <span class="code">user</span></p>
+              <img src="../../resources/images/codesnippets/cookie3.JPG">
+              <p><span class="code">setCookie("username", user, 30)</span> seier noko om kva navnet til cookien er, kva verdi den skal ha og kor lenge den skal vare.</p>
+              <p>Sjå opprette cookie for nærmare info.</p>
+              <h2>Opprette cookie </h2>
+              <p>I koden under oppretter den en cookie: </p>
+              <img src="../../resources/images/codesnippets/cookie1.JPG">
+              <p><span class="code">cname</span> er navnet på cookien</p>
+              <p><span class="code">cvalue</span> er verdien til cookien</p>
+              <p><span class="code">exdays</span> er utløpsdatoen til cookien</p>
+              <p><span class="code">document.cookie </span> setter cookien</p>
+              <p>Dersom eg velger å skrive inn "Stine" i alert-boksen:</p>
+              <p>Cookien blir derfor: <span class="code">"username"=Stine;30;path=/</span></p>
+              <h2>Hente cookie</h2>
+              <p> I koden under henter den en cookie: </p>
+              <img src="../../resources/images/codesnippets/cookie2.jpg">
+              <p>Denne koden tar inn en parameter <span class="code">cname</span> som er navnet på cookien den skal finne i nettleseren. </p>
+              <p>I dette tilfellet er det <span class="code">"username"</span></p>
+              <p>Denne koden bruker ulike <span>string</span>metoder for å splitte teksten i cookien</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="links">
+
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>&#169; <span id="year"></span> Stine Jonassen Føyen </p>
+  </footer>
+
+  <script type="text/javascript" src="../../resources/js/year.js"></script>
+</body>
+
+</html>
