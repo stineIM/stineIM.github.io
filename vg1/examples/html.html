@@ -10,29 +10,48 @@
 </head>
 
 <body>
-	<div class="main-content">
+	<div>
 		<div class="navigation">
 			<div class="logo">
 				<span class="nav-item" id="logo">
-					<a id="logo" href="../index.html"><img src="../../resources/images/im_logo_ligg_sv_purple.jpg"></a>
+					<a id="logo" href="/index.html"><img src="/resources/images/im_logo_ligg_sv_invert2.png"></a>
 				</span>
 			</div>
 			<div class="links">
 				<span class="nav-item">
-					<a href="../index.html">Heim</a>
+					<a href="/index.html">Heim</a>
 				</span>
 				<span class="nav-item">
-					<a href="../index.html">Vg1</a>
+					<a href="/vg1/index.html">Vg1</a>
+				</span>
+				<span class="nav-item dropdown"><a href="/vg2/index.html">Vg2</a>
+					<i class="fa fa-caret-down"></i>
+					<div class="dropdown-content">
+						<a href="/vg2/web.html">HTML / CSS / JS</a>
+						<a href="#">C#</a>
+						<a href="https://ndla.no/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:c06064a8-54b1-4e75-b154-b3fa7b01d225/"
+							target="_blank">Python</a>
+						<a href="/vg2/examples/database.html">Databasar</a>
+						<a href="https://ndla.no/subject:f41eadfa-0749-4ab4-bc17-a500adad38b8/topic:b560d9d8-e4b1-4f28-b171-9febe1b3c42e/"
+							target="_blank">Personvern</a>
+						<a href="/vg2/examples/cookies.html">Cookies</a>
+						<a href="/vg2/examples/environment.html">Utviklingsmiljø</a>
+						<a href="https://ndla.no/subject:1:1352b19e-e706-4480-a728-c6b0a57ba8ae/topic:1:e48b7498-b2d3-4ad0-b797-bd153728ad47/"
+							target="_blank">Dokumentasjon</a>
+						<a href="https://ndla.no/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:0d260948-d2c6-4b8d-9c01-97aac6610961/"
+							target="_blank">Universell utforming</a>
+						<a href="/vg2/examples/versioncontrol.html">Versjonskontroll</a>
+					</div>
+				</span>
 				</span>
 				<span class="nav-item">
-					<a href="../vg2/index.html">Vg2</a>
-				</span>
-				<span class="nav-item">
-					<a href="../about.html">Info</a>
+					<a href="/about.html">Om oss</a>
 				</span>
 
 			</div>
 		</div>
+	</div>
+	<div class="main-content">
 		<main>
 
 			<div class="grid-container">
@@ -67,10 +86,64 @@
 
 				</div>
 				<div class="grid-content">
+					<h1>Korleis lage ei nettside?</h1>
+					<div class="subject" id="starting">
+						<div class="subjectTitle">
+							<h2>Ting som må på plass før ein startar</h2>
+						</div>
+						<div class="subjectBox">
+							<ul>
+								<li>
+									<h3>Last ned og installer <a href="https://code.visualstudio.com/">Visual Studio
+											Code</a></h3>
+								</li>
+								<li>
+									<h3>Last ned Live Server extension i Visual Studio Code (VSCode)</h3>
+								</li>
+								<li>
+									<h3>Opprett ei mappe på PCen din, kor du samlar all kode. (Kvart prosjekt / nettside
+										skal ha si eiga mappe.)</h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="subject" id="createhtml">
+						<div class="subjectTitle">
+							<h2>Opprette HTML dokument</h2>
+						</div>
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/tags/tag_hn.asp" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<h2>Ei HTML side inneheld: </h2>
+							<ul>
+								<li><h3><span class="code">&lt;!doctype html> </span>: </h3></li>
+								<li><h3><span class="code">&lt;html> &lt;html/> </span>:</h3></li>
+								<li><h3><span class="code">&lt;head> &lt;head/> </span>: Det som ikkje er ein del av sjølve nettsida (alt det me ikkje kan sjå)</h3></li>
+								<li><h3><span class="code">&lt;meta charset="utf-8"></span>: Henter inn tegnsettet UTF-8 (slik at ein får alle tegna)</h3></li>
+								<li><h3><span class="code">&lt;title> &lt;title/> </span>: Tittel på sida (det som står i fana i nettlesaren)</h3></li>
+								<li><h3><span class="code">&lt;link rel="stylesheet"> &lt;link/> </span>:</h3></li>
+							</ul>
+
+							<h2>For å opprette ei HTML side i visual studio code kan ein gjere slik: </h2>
+							<ol>
+								<li>Klikk File --> New Text File</li>
+								<li>Klikk "Select language" og skriv inn html</li>
+								<li>Lagre fila ved å klikke Ctrl + s (husk å lagre fila di i rett mappe)</li>
+							</ol>
+							<h3>Filendelsen til ei html fil er .html</h3>
+
+							<h3>Obs! HTML filer skrives med berre små bokstavar. Unngå lange navn og mellomrom. </h3>
+							<h4>Eksempel: index.html, about.html, homepage.html</h4>
+						</div>
+
+					</div>
 					<h1>Eksempler HTML</h1>
 					<div class="subject" id="headers">
 						<div class="subjectTitle">
-							<h1>Overskrifter</h1>
+							<h2>Overskrifter</h2>
 						</div>
 						<div class="subjectBox">
 
@@ -93,7 +166,7 @@
 					</div>
 					<div class="subject" id="images">
 						<div class="subjectTitle">
-							<h1>Bilete</h1>
+							<h2>Bilete</h2>
 						</div>
 
 						<div class="subjectBox">
@@ -113,7 +186,7 @@
 					</div>
 					<div class="subject" id="links">
 						<div class="subjectTitle">
-							<h1>Lenker</h1>
+							<h2>Lenker</h2>
 						</div>
 						<div class="subjectBox">
 							<a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">
@@ -146,6 +219,42 @@
 									</div>
 								</li>
 							</ul>
+						</div>
+
+					</div>
+					<div class="subject" id="table">
+						<div class="subjectTitle">
+							<h2>Tabellar</h2>
+						</div>
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<p>Ein tabell i html skrives inn ved å bruke <span class="code">&lt;table></span> taggen</p>
+							<p> <span class="code">&lt;table></span> er ikkje så mykje i bruk lenger, ein bruker for det meste <span class="code">&lt;div></span> taggen for å opprette noko som liknar tabellar</p>
+							<p>For å opprette ein tabell, gjer ein slik:</p>
+							<p><span class="code">&lt;table></span> </p>
+							<p><span class="code">&emsp;&lt;tr></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;th>Fornavn&lt;/th></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;th></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;/th></span> </p>
+							<p><span class="code">&emsp;&lt;/tr></span> </p>
+							<p><span class="code">&emsp;&lt;tr></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;td></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;/td></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;td></span> </p>
+							<p><span class="code">&emsp;&emsp;&lt;/td></span> </p>
+							<p><span class="code">&emsp;&lt;/tr></span> </p>
+							<p><span class="code">&lt;/table></span> </p>
+							<br>
+							<p>Der &lt;table> er starten på tabellen</p>
+							<p>&lt;tr> er ei rad i tabellen (table row)</p>
+							<p>&lt;th> er overskriften (table header)</p>
+							<p>&lt;td> er dataen som ligg i cella (table data)</p>
+							<p>Resultatet av tabellen over er: </p>
+
 						</div>
 
 					</div>

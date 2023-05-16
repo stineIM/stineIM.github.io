@@ -1,10 +1,10 @@
 .exer a {
     transition: 0.3s;
-    color: #706fd3;
+    color: #333;
 }
 
 .exer a:hover {
-    color: #0084a5;
+    color: #666;
 }
 
 hr {

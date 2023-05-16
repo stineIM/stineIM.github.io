@@ -1,3 +1,16 @@
+:root {
+  --theme-color-standard: #008080;
+  --theme-color-font: #0f1d28; 
+  --theme-color-first: #a79bce; 
+  --theme-color-second: #6A5ACD; 
+  --theme-color-third: #000080; 
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -16,7 +29,7 @@
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgb(167, 155, 206);
+  background-color: var(--theme-color-second);
   color: white;
   border-radius: 10px;
 }
@@ -43,9 +56,10 @@
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(167, 155, 206, 0.8);
+  background-color: var(--theme-color-first);
   color: white;
   border-radius: 10px;
+  font-size: large;
 }
 
 .box-container a {

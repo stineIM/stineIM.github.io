@@ -1,9 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --theme-color-standard: #008080;
+  --theme-color-font: #0f1d28; 
+  --theme-color-first: #a79bce; 
+  --theme-color-second: #6a5acd; 
+  --theme-color-third: #000080; 
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/resources/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
+}
+
+body, a, p, li {
+  font-family: myFirstFont;
   margin: 0;
+  background-color: fefefe;
 }
 
 h1,
@@ -11,7 +25,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: monospace;
+  font-family: myFirstFont;
 }
 
 .header {
@@ -32,24 +46,27 @@ h5 {
   max-width: 100rem;
   margin-right: auto;
   margin-left: auto;
-  min-height: 8rem;
-}
-
-footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #0084a5;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
+  min-height: 600px
 }
 
 .navigation {
   width: 100%;
   color: #333;
-  padding-top: 40px;
   display: inline-block;
+  background-color: var(--theme-color-standard);
+}
+
+.navigation .links {
+  padding-top:60px;
+  color: white; 
+}
+
+.navigation .links a {
+  color: white;
+}
+
+.navigation img{
+  padding:20px;
 }
 
 .links {
@@ -66,7 +83,7 @@ footer {
 }
 
 .nav-item a:hover {
-  color: #b3b3b3;
+  color: #133b6f;
 }
 
 .logo {
@@ -75,7 +92,6 @@ footer {
 
 #logo {
   font-size: 40px;
-  color: #706fd3;
   font-weight: bold;
   padding: 0px;
 }
@@ -90,17 +106,17 @@ footer {
 
 /******************************************/
 
-
-
 footer {
   height: 50px;
-  background-color: #133b6f;
+  background-color: var(--theme-color-third);
   position: initial;
   bottom: 0;
   left: 0;
   width: 100%;
+  color: #fefefe;
   text-align: center;
   margin-top: 50px;
+  padding: 40px 0px 40px 0px;
 }
 
 #countdown {
@@ -114,3 +130,37 @@ footer {
   align-items: center;
   margin-top: 40px;
 }
+
+/************************************************************/ 
+
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--theme-color-standard);
+  min-width: 100%;
+  z-index: 1;
+  text-align: left;
+  margin-top:10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+

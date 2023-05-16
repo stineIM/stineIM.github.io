@@ -1,8 +1,16 @@
+:root {
+  --theme-color-standard: #008080;
+  --theme-color-font: #0f1d28; 
+  --theme-color-first: #a79bce; 
+  --theme-color-second: #6A5ACD; 
+  --theme-color-third: #000080; 
+}
+
 main {
   max-width: 100rem;
   margin-right: auto;
   margin-left: auto;
-  min-height: 10rem;
+  min-height: 600px;
 }
 
 
@@ -22,7 +30,7 @@ main {
 
 .grid-box {
   border-radius: 10px;
-  background-color: rgb(167, 155, 206);
+  background-color: var(--theme-color-second);
   padding: 20px 0px 20px 0px;
   font-size: 1.5rem;
   text-align: center;
@@ -34,15 +42,7 @@ main {
 }
 
 .grid-box:hover {
-  background-color: rgba(167, 155, 206, 0.8);
-}
-
-#links-right {
-  height: fit-content;
-  background-color: #d3d1ed;
-  margin-top: 10px;
-  padding-top: 5px;
-  margin-bottom: 30px;
+  background-color: var(--theme-color-first);
 }
 
 .box-content {
@@ -102,4 +102,20 @@ main {
 
 h2 {
   color: #706fd3;
+}
+
+.links-right {
+  height: fit-content;
+  background-color: #d3d1ed;
+  margin-top: 10px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
+
+.links-right a {
+  color: #333;
+}
+
+.links-right a:hover {
+  color: #666;
 }
