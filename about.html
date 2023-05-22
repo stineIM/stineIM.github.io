@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Heim</title>
-	<link rel="stylesheet" href="resources/css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="resources/css/main.css">
+	<link rel="stylesheet" href="resources/css/index.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 					<a id="logo" href="/index.html"><img src="../resources/images/im_logo_ligg_sv_invert2.png"></a>
 				</span>
 			</div>
-			<div class="links">
+			<div class="links" id="myTopnav">
 				<span class="nav-item">
 					<a href="index.html">Heim</a>
 				</span>
@@ -48,13 +49,15 @@
 				<span class="nav-item">
 					<a href="about.html">Om oss</a>
 				</span>
-
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</div>
 		</div>
 	</div>
 	<div class="main-content">
 
-		<div>
+		<div class="grid-container">
 			<h1 class="subjectHeader">Om oss</h1>
 			<p>Dette er faget for deg som er kreativ og interessert i IT, nettverk og visuelle uttrykksformer. Etter 2
 				år på skule kan du gå ut i lære. Du kan også ta påbygg til generell studiekompetanse før eller etter

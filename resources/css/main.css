@@ -164,3 +164,81 @@ footer {
 
 .dropdown:hover .dropdown-content {display: block;}
 
+.ext-icon {
+  width:20px;
+}
+
+  
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: block;
+  }
+  .task-grid {
+    display: block;
+  }
+  .grid-container-3 {
+      text-align: center;
+  }
+  .grid-box {
+      width: 45%;
+      font-size: 1rem;
+  }
+
+  .subjectHeader {
+      font-size: 30px;
+      padding-left: 20px;
+  }
+  .logo {
+      width: 50%;
+  }
+
+  .logo img {
+      max-width: 100%;
+  }
+
+  .icon {
+      padding: 20px;  
+      font-size: 40px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links .nav-item {display: none;}
+  .links .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blue-box a {
+      font-size: 18px;
+  }
+  .links.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .links.responsive .nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+  }
+  .links.links.responsive {
+      width: 100%;
+  }
+  .navigation .links {
+      padding-top: 0px;
+  }
+  .fa-caret-down {display:none;}
+  .blue-box {
+      margin: 20px;
+      padding: 10px;
+  }
+
+  .header {
+    padding: 0px;
+  }
+}
