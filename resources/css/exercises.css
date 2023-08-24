@@ -100,4 +100,6 @@ hr {
         margin: 20px;
         padding: 10px;
     }
+    .fa-caret-down {display:none;}
+
   }

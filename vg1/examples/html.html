@@ -65,7 +65,7 @@
 					</div>
 					<ul>
 						<li>
-							<a href="#logo">1. Overskrifter</a>
+							<a href="#headers">1. Overskrifter</a>
 						</li>
 						<li>
 							<a href="#images">2. Bilete</a>
@@ -74,22 +74,22 @@
 							<a href="#links">3. Lenker</a>
 						</li>
 						<li>
-							<a href="#tables">4. Tabellar</a>
+							<a href="#table">4. Tabellar</a>
 						</li>
 						<li>
-							<a href="#forms">5. Forms</a>
+							<a href="#lists">5. Lister</a>
 						</li>
 						<li>
-							<a href="#lists">6. Lister</a>
+							<a href="#divs">6. &lt;div></a>
 						</li>
 						<li>
-							<a href="#divs">7. div</a>
+							<a href="#forms">7. Forms</a>
 						</li>
 					</ul>
 
 				</div>
 				<div class="grid-content">
-					<h1>Korleis lage ei nettside?</h1>
+					<h1>Korleis lage ei nettside</h1>
 					<div class="subject" id="starting">
 						<div class="subjectTitle">
 							<h2>Ting som må på plass før ein startar</h2>
@@ -129,6 +129,8 @@
 								<li><h3><span class="code">&lt;title> &lt;title/> </span>: Tittel på sida (det som står i fana i nettlesaren)</h3></li>
 								<li><h3><span class="code">&lt;link rel="stylesheet"> &lt;link/> </span>:</h3></li>
 							</ul>
+
+							<img src="/resources/images/html.JPG">
 
 							<h2>For å opprette ei HTML side i visual studio code kan ein gjere slik: </h2>
 							<ol>
@@ -261,8 +263,100 @@
 						</div>
 
 					</div>
+					<div class="subject" id="lists">
+						<div class="subjectTitle">
+							<h2>Lister</h2>
+						</div>
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<h2>Nummererte lister (ordered lists, <span class="code"> &lt;ol></span>): </h2>
+							<p><span class="code">&lt;ol></span> </p>
+							<p><span class="code">&emsp;&lt;li> Forrett &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Hovedrett &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Dessert &lt;/li></span> </p>
+							<p><span class="code">&lt;/ol></span> </p>
+							<br>
+							<h3>Resultat: </h3>
 
+							<ol>
+								<li>Forrett</li>
+								<li>Hovedrett</li>
+								<li>Dessert</li>
+							</ol>
+
+							<h2>Unummererte lister (unordered lists, <span class="code"> &lt;ul></span>): </h2>
+							<p><span class="code">&lt;ul></span> </p>
+							<p><span class="code">&emsp;&lt;li> Teknologiforståing &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Konseptutvikling og programmering &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Produksjon og historieforteljing &lt;/li></span> </p>
+							<p><span class="code">&lt;/ul></span> </p>
+							<br>
+							<h3>Resultat: </h3>
+
+							<ul>
+								<li>Teknologiforståing</li>
+								<li>Konseptutvikling og programmering</li>
+								<li>Produksjon og historieforteljing</li>
+							</ul>
+
+							<p>&lt;ol> og &lt;ul> fortel kva for liste det er snakk om</p>
+							<p>&lt;li> Er list-item, altså kvar punkt i lista. </p>
+							<p>Dette kan vere tekst, bilete, tal andre HTML element</p>
+						</div>
+					</div>
+					<div class="subject" id="divs">
+						<div class="subjectTitle">
+							<h2>Containere og &lt;div>-taggen</h2>
+						</div>
+						<div class="subjectBox">
+							<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+								<div class="linkBox">
+									w3schools
+								</div>
+							</a>
+							<h2>Sorterte lister (ordered lists, <span class="code"> &lt;ol></span>): </h2>
+							<p><span class="code">&lt;ol></span> </p>
+							<p><span class="code">&emsp;&lt;li> Forrett &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Hovedrett &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Dessert &lt;/li></span> </p>
+							<p><span class="code">&lt;/ol></span> </p>
+							<br>
+							<h3>Resultat: </h3>
+	
+							<ol>
+								<li>Forrett</li>
+								<li>Hovedrett</li>
+								<li>Dessert</li>
+							</ol>
+	
+							<h2>Usorterte lister (unordered lists, <span class="code"> &lt;ul></span>): </h2>
+							<p><span class="code">&lt;ul></span> </p>
+							<p><span class="code">&emsp;&lt;li> Teknologiforståing &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Konseptutvikling og programmering &lt;/li></span> </p>
+							<p><span class="code">&emsp;&lt;li> Produksjon og historieforteljing &lt;/li></span> </p>
+							<p><span class="code">&lt;/ul></span> </p>
+							<br>
+							<h3>Resultat: </h3>
+	
+							<ul>
+								<li>Teknologiforståing</li>
+								<li>Konseptutvikling og programmering</li>
+								<li>Produksjon og historieforteljing</li>
+							</ul>
+	
+							<p>&lt;ol> og &lt;ul> fortel kva for liste det er snakk om</p>
+							<p>&lt;li> Er list-item, altså kvar punkt i lista. </p>
+							<p>Dette kan vere tekst, bilete, tal andre HTML element</p>
+						</div>
+					</div>
+	
 				</div>
+				
+			</div>
 				<div class="links">
 
 				</div>

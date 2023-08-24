@@ -209,4 +209,6 @@ footer {
     .subject {
         margin-right: 20px;
     }
+    .fa-caret-down {display:none;}
+
   }
