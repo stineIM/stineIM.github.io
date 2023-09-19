@@ -149,3 +149,10 @@ h2 {
   padding-inline-start: 20px;
   margin: 5px;
 }
+
+.log {
+  padding: 20px; 
+  border: 1px solid var(--theme-color-first);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
