@@ -144,15 +144,20 @@ h2 {
   color: #706fd3;
   margin-bottom:5px;
 }
+ 
 
 .yearplan .period ul {
   padding-inline-start: 20px;
   margin: 5px;
 }
 
+
+/* Logg-boks på forside */ 
+
 .log {
   padding: 20px; 
   border: 1px solid var(--theme-color-first);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin:10px;
 }
