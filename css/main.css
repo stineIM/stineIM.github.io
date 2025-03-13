@@ -1,0 +1,356 @@
+:root {
+    /* Primære farger */
+    --primary-color: #0097A7; /* Turkisblå - Header */
+    --primary-text-color: #FFFFFF; /* Hvit - Tekst på header */
+    --background-color: #F9F9F9; /* Lys grå - Bakgrunn */
+    --card-background: #E0E0E0; /* Lys blågrå - Kort, skygger */
+    
+    /* Sekundære farger */
+    --secondary-color: #FF6F00; /* Oransje - Primærknapper */
+    --secondary-text-color: #FFFFFF; /* Hvit - Tekst på knapper */
+    
+    /* Interaksjonsfarger */
+    --link-color: #6A0DAD; /* Lilla - Lenker */
+    --link-hover-color: #8A2BE2; /* Lysere lilla - Hover på lenker */
+    --button-hover: #FF8C42; /* Lysere oransje - Hover på knapper */
+    
+    /* UI og effekter */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Skygger */
+    --border-color: #DDDDDD; /* Myk kantlinje */
+    
+    /* Varsler og statusfarger */
+    --success-color: #00C853; /* Grønn - Suksess */
+    --error-color: #D32F2F; /* Rød - Feil */
+    --warning-color: #FDC500; /* Gul - Advarsler */
+}
+
+/* Generelle stiler */
+body {
+    background-color: var(--background-color);
+    color: #000000; /* Svart tekst for lesbarhet */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.theme-header {
+    background-color: #E0E0E0;
+    color: var(--link-color);
+}
+
+.theme-header nav a {
+    background-color: #E0E0E0;
+    color: var(--link-color);
+}
+
+/* Navigasjon */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Knappestil */
+button, .btn {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--button-hover);
+}
+
+/* Kort / Box-stil */
+.card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px var(--shadow-color);
+}
+
+/* Lenker */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Varsler */
+.success {
+    color: var(--success-color);
+}
+
+.error {
+    color: var(--error-color);
+}
+
+.warning {
+    color: var(--warning-color);
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section {
+    margin-bottom: 30px;
+}
+
+section img {
+    max-width: 50%;
+}
+
+section a {
+    color: var(--link-color); 
+    text-decoration: underline;
+}
+/* Styling for kodeblokker */
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #0097A7;
+    overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling for resultatområder */
+.example {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Forbedret styling for lenker */
+.example a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.example a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for skjemaelementer */
+.example input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.example input[type="submit"] {
+    background-color: #0097A7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.example input[type="submit"]:hover {
+    background-color: #007C91;
+}
+
+/* Skiller kode fra resultat visuelt */
+h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #0097A7;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*****/ 
+@keyframes changeColor {
+    0% { background-color: red; }
+    50% { background-color: blue; }
+    100% { background-color: red; }
+}
+
+@keyframes slideRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.masked-image {
+    mask-image: url('..images/example.jpg');
+}
+
+.blend-mode {
+    background-color: red;
+    mix-blend-mode: multiply;
+}
+
+.example .grid-layout {
+    
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "menu main"
+            "footer footer";
+    
+}
+
+/* Generelle stiler */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+/* Header */
+header {
+    background-color: #0097A7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Wrapper for sidebar + main */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #007C91;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Navigasjonsmeny */
+.sidebar .nav {
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #005F6B;
+}
+
+/* Responsiv meny for mobil */
+.menu-toggle {
+    display: none;
+    background-color: #FF6F00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+/* RESPONSIV MENY */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #007C91;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #FF6F00;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        width: 100%;
+    }
+}
+

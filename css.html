@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT & Medieproduksjon</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Velkommen til IT & Medieproduksjon</h1>
+        <nav>
+            <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="theme-header">
+        <h1>CSS Fagstoff</h1>
+    </header>
+
+    <!-- Wrapper som inneholder sidebar og main -->
+    <div class="container">
+        <!-- Sidemeny -->
+        <aside class="sidebar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰ Meny</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#intro">Introduksjon</a></li>
+                    <li><a href="#selektorer">Selektorer</a></li>
+                    <li><a href="#farger">Farger & Bakgrunner</a></li>
+                    <li><a href="#tekst">Tekst & Typografi</a></li>
+                    <li><a href="#bokser">Boksmodellen</a></li>
+                    <li><a href="#grid">CSS Grid</a></li>
+                    <li><a href="#flexbox">Flexbox</a></li>
+                    <li><a href="#animasjoner">Animasjoner</a></li>
+                    <li><a href="#responsivt">Responsivt Design</a></li>
+                    <li><a href="#skygger">Skygger</a></li>
+                    <li><a href="#gradienter">Gradienter</a></li>
+                    <li><a href="#pseudo">Pseudo-klasser</a></li>
+                    <li><a href="#filtereffekter">Filtereffekter</a></li>
+                    <li><a href="#variabler">CSS Variabler</a></li>
+                    <li><a href="#gridvsflex">Grid vs. Flexbox</a></li>
+                    <li><a href="#darkmode">Dark Mode</a></li>
+                </ul>
+            </nav>
+        </aside> 
+
+    <main>
+        <section id="intro">
+            <h2>1. Introduksjon til CSS</h2>
+            <p>CSS (Cascading Style Sheets) brukes for å style HTML-elementer.</p>
+            <pre><code>body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example" style="background-color: #f0f0f0; font-family: Arial, sans-serif; padding: 10px;">
+                Dette er en side med bakgrunnsfarge og skriftstil.
+            </div>
+        </section>
+        <section id="selektorer">
+            <h2>2. CSS Selektorer</h2>
+            <p>Selektorer brukes for å velge hvilke HTML-elementer som skal styles.</p>
+            <pre><code>p {
+        color: blue;
+    }
+    #unikt-id {
+        font-weight: bold;
+    }
+    .klasse {
+        text-decoration: underline;
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <p style="color: blue;">Dette er et avsnitt med blå tekst.</p>
+                <p id="unikt-id" style="font-weight: bold;">Dette er en unik ID-stil.</p>
+                <p class="klasse" style="text-decoration: underline;">Dette er en klasse med understrekning.</p>
+            </div>
+        </section>
+
+        <section id="farger">
+            <h2>3. Farger & Bakgrunner</h2>
+            <p>CSS lar deg definere farger på ulike måter.</p>
+            <pre><code>body {
+        background-color: #0097A7;
+        color: white;
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example" style="background-color: #0097A7; color: white; padding: 10px;">
+                Eksempel på fargevalg i CSS.
+            </div>
+        </section>
+
+        <section id="tekst">
+            <h2>4. Tekst & Typografi</h2>
+            <p>CSS lar deg styre skriftstørrelse, farge og font.</p>
+            <pre><code>h1 {
+        font-size: 2em;
+        color: darkblue;
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <h1 style="font-size: 2em; color: darkblue;">Dette er en stor, mørkeblå overskrift.</h1>
+            </div>
+        </section>
+
+        <section id="bokser">
+            <h2>5. Boksmodellen</h2>
+            <p>Boksmodellen definerer padding, margin og border.</p>
+            <pre><code>div {
+        width: 300px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 20px;
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example" style="width: 300px; padding: 10px; border: 2px solid black; margin: 20px;">
+                Dette er en boks med padding, margin og en svart kantlinje.
+            </div>
+        </section>
+
+        <section id="grid">
+            <h2>6. CSS Grid</h2>
+            <p>Grid-systemet brukes til å lage fleksible layouter.</p>
+            <pre><code>.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div style="background-color: lightgray; padding: 10px;">Kolonne 1</div>
+                <div style="background-color: lightgray; padding: 10px;">Kolonne 2</div>
+            </div>
+        </section>
+
+        <h2 id="flexbox">7. Flexbox</h2>
+        <p>Flexbox brukes til å justere elementer horisontalt og vertikalt. Det gir mer fleksible layouter.</p>
+        <p><strong>Forklaring av egenskapene:</strong></p>
+        <ul>
+            <li><code>justify-content: space-between;</code> - Plasserer elementene med jevn avstand mellom seg.</li>
+            <li><code>align-items: center;</code> - Justerer elementene vertikalt i midten av containeren.</li>
+            <li><code>gap: 10px;</code> - Gir en mellomrom på 10px mellom elementene.</li>
+        </ul>
+        <h3>Eksempel på ulike <code>justify-content</code> verdier:</h3>
+        <p><code
+                style="color:var(--button-hover); font-weight: bold; font-size: 1rem;">justify-content: flex-start;</code>
+            (Elementene justeres til venstre)</p>
+        <div class="example"
+            style="display: flex; justify-content: flex-start; align-items: center; gap: 10px; background-color: #f4f4f4; padding: 10px;">
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                1</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                2</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                3</div>
+        </div>
+
+        <p><code
+                style="color:var(--button-hover); font-weight: bold; font-size: 1rem;">justify-content: flex-end;</code>
+            (Elementene justeres til høyre)</p>
+        <div class="example"
+            style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; background-color: #f4f4f4; padding: 10px;">
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                1</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                2</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                3</div>
+        </div>
+
+        <p><code style="color:var(--button-hover); font-weight: bold; font-size: 1rem;">justify-content: center;</code>
+            (Elementene sentreres horisontalt)</p>
+        <div class="example"
+            style="display: flex; justify-content: center; align-items: center; gap: 10px; background-color: #f4f4f4; padding: 10px;">
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                1</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                2</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                3</div>
+        </div>
+
+        <p><code
+                style="color:var(--button-hover); font-weight: bold; font-size: 1rem;">justify-content: space-around;</code>
+            (Elementene sprer seg jevnt med plass mellom seg)</p>
+        <div class="example"
+            style="display: flex; justify-content: space-between; align-items: center; gap: 10px; background-color: #f4f4f4; padding: 10px;">
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                1</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                2</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                3</div>
+        </div>
+
+        <p><code
+                style="color:var(--button-hover); font-weight: bold; font-size: 1rem;">justify-content: space-between;</code>
+            (Elementene sprer seg jevnt med plass mellom seg)</p>
+        <div class="example"
+            style="display: flex; justify-content: space-around; align-items: center; gap: 10px; background-color: #f4f4f4; padding: 10px;">
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                1</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                2</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                3</div>
+        </div>
+
+        <pre><code>.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.flex-item {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+}</code></pre>
+        <h3>Resultat:</h3>
+        <div class="example"
+            style="display: flex; justify-content: space-between; align-items: center; gap: 10px; background-color: #f4f4f4; padding: 10px;">
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                1</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                2</div>
+            <div class="flex-item"
+                style="background-color: var(--button-hover); padding: 20px; text-align: center; border-radius: 5px; width: 100px;">
+                3</div>
+        </div>
+        </section>
+
+        <section id="animasjoner">
+            <h2>8. Animasjoner i CSS</h2>
+            <p>Med CSS kan vi lage enkle eller komplekse animasjoner.</p>
+
+            <h3>Eksempel: Bakgrunnsfargen endres</h3>
+            <pre><code>
+        @keyframes changeColor {
+            0% { background-color: red; }
+            50% { background-color: blue; }
+            100% { background-color: red; }
+        }
+        
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: changeColor 3s infinite;
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <div class="animated-box"
+                    style="width: 100px; height: 100px; background-color: red; animation: changeColor 3s infinite;">
+                </div>
+            </div>
+
+            <h3>Eksempel: Flytte en boks fra venstre til høyre</h3>
+            <pre><code>
+@keyframes slideRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200px); }
+}
+
+.moving-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    animation: slideRight 2s infinite alternate;
+}
+</code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <div class="moving-box"
+                    style="width: 100px; height: 100px; background-color: lightblue; animation: slideRight 2s infinite alternate;">
+                </div>
+            </div>
+
+            <h3>Eksempel: En pulserende sirkel</h3>
+            <pre><code>
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.pulse-circle {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+</code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <div class="pulse-circle"
+                    style="width: 50px; height: 50px; background-color: orange; border-radius: 50%; animation: pulse 1.5s infinite;">
+                </div>
+            </div>
+
+            <h3>Eksempel: En knapp som vokser ved hover</h3>
+            <pre><code>
+.button-hover {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-hover:hover {
+    transform: scale(1.2);
+}
+</code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <button class="button-hover"
+                    style="padding: 10px 20px; background-color: green; color: white; border: none; cursor: pointer; transition: transform 0.3s ease-in-out;"
+                    onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+                    Hover meg!
+                </button>
+            </div>
+
+        </section>
+
+        <section id="responsivt">
+            <h2>9. Responsivt Design</h2>
+            <p>Media queries gjør at nettsider tilpasser seg ulike skjermer.</p>
+            <pre><code>@media (max-width: 600px) {
+        body {
+            background-color: lightgray;
+        }
+    }</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example" style="background-color: lightgray; padding: 10px;">
+                Endrer bakgrunnsfarge på små skjermer.
+            </div>
+
+            <h3>Eksempel: Responsivt design</h3>
+            <pre><code>
+/* Standard stil for store skjermer */
+body {
+    font-size: 18px;
+    background-color: white;
+}
+
+/* Mobilvisning (maks 480px bredde) */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+        background-color: lightgray;
+    }
+}
+
+/* Eksempel på flere media queries */
+
+/* 1. Mobilvisning (maks 480px) */
+@media (max-width: 480px) {
+    body {
+        background-color: #f4f4f4;
+        font-size: 16px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* 2. Nettbrett (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: #e0e0e0;
+    }
+}
+
+/* 3. Laptop & PC (768px - 1440px) */
+@media (min-width: 769px) and (max-width: 1440px) {
+    body {
+        background-color: white;
+    }
+}
+
+/* 4. Store skjermer (1441px +) */
+@media (min-width: 1441px) {
+    body {
+        background-color: lightblue;
+    }
+</code></pre>
+
+            <h3>Resultat:</h3>
+            <p>Åpne denne nettsiden på en liten skjerm eller bruk utviklerverktøyet i nettleseren (F12 -> Toggle device
+                toolbar) for å se endringen.</p>
+
+        </section>
+
+        <section id="skygger">
+            <h2>10. Skygger & Effekter</h2>
+            <p>Med CSS kan vi legge til skygger på bokser og tekst for å gi en mer visuelt tiltalende effekt.</p>
+
+            <h3>Eksempel: Boks-skygge (`box-shadow`)</h3>
+            <pre><code>
+        .box-shadow {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example"
+                style="width: 200px; height: 100px; background-color: lightblue; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+            </div>
+
+            <h3>Eksempel: Tekst-skygge (`text-shadow`)</h3>
+            <pre><code>
+        .text-shadow {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <p style="font-size: 24px; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
+                    Tekst med skygge
+                </p>
+            </div>
+        </section>
+
+        <section id="gradienter">
+            <h2>11. Gradienter</h2>
+            <p>CSS-gradienter lar oss lage flotte bakgrunnseffekter uten å bruke bilder.</p>
+
+            <h3>Eksempel: Lineær gradient</h3>
+            <pre><code>
+        .gradient-box {
+            width: 200px;
+            height: 100px;
+            background: linear-gradient(to right, red, blue);
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example" style="width: 200px; height: 100px; background: linear-gradient(to right, red, blue);">
+            </div>
+
+            <h3>Eksempel: Radial gradient</h3>
+            <pre><code>
+        .radial-gradient-box {
+            width: 200px;
+            height: 100px;
+            background: radial-gradient(circle, yellow, green);
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example"
+                style="width: 200px; height: 100px; background: radial-gradient(circle, yellow, green);">
+            </div>
+        </section>
+
+        <section id="pseudo">
+            <h2>12. Pseudo-klasser & Pseudo-elementer</h2>
+            <p>Pseudo-klasser og pseudo-elementer lar oss manipulere spesifikke deler av elementer.</p>
+
+            <h3>Eksempel: Hover-effekt på knapper</h3>
+            <pre><code>
+        .button-hover {
+            background-color: #0097A7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .button-hover:hover {
+            background-color: #007C91;
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <button class="button-hover"
+                    style="background-color: #0097A7; color: white; padding: 10px 20px; border: none; cursor: pointer; transition: background 0.3s;"
+                    onmouseover="this.style.backgroundColor='#007C91'"
+                    onmouseout="this.style.backgroundColor='#0097A7'">
+                    Hold over meg!
+                </button>
+            </div>
+
+            <h3>Eksempel: Første bokstav med `::first-letter`</h3>
+            <pre><code>
+        p::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: red;
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <p style="font-size: 16px;"><span style="font-size: 2em; font-weight: bold; color: red;">F</span>ørste
+                    bokstav er større.</p>
+            </div>
+        </section>
+
+        <section id="filtereffekter">
+            <h2>13. Filtereffekter</h2>
+            <p>CSS filter-effekter lar oss endre utseendet til bilder og elementer.</p>
+
+            <h3>Eksempel: Gråskalabilde</h3>
+            <pre><code>
+        img {
+            filter: grayscale(100%);
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <img src="images/example.jpg" style="filter: grayscale(100%);">
+            </div>
+
+            <h3>Eksempel: Blur-effekt</h3>
+            <pre><code>
+        .blur {
+            filter: blur(5px);
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <img src="images/example.jpg" class="blur" style="filter: blur(5px);">
+            </div>
+        </section>
+
+        <section id="variabler">
+            <h2>14. CSS Variabler</h2>
+            <p>Variabler i CSS gjør det enklere å gjenbruke farger og andre verdier.</p>
+
+            <h3>Eksempel: Definere variabler</h3>
+            <pre><code>
+        :root {
+            --main-color: #FF6F00;
+            --text-color: white;
+        }
+        
+        .button {
+            background-color: var(--main-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example">
+                <button class="button"
+                    style="background-color: #FF6F00; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+                    Variabel-knapp
+                </button>
+            </div>
+        </section>
+
+        <section id="gridvsflex">
+            <h2>15. CSS Grid vs. Flexbox</h2>
+            <p>Flexbox er best for én-dimensjonale layout (rekke eller kolonne), mens CSS Grid er best for komplekse
+                to-dimensjonale layout.</p>
+
+            <h3>Eksempel: Grid med tre kolonner</h3>
+            <pre><code>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .grid-item {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <div class="example" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div class="grid-item" style="background-color: lightgray; padding: 20px;">1</div>
+                <div class="grid-item" style="background-color: lightgray; padding: 20px;">2</div>
+                <div class="grid-item" style="background-color: lightgray; padding: 20px;">3</div>
+                <div class="grid-item" style="background-color: lightgray; padding: 20px;">4</div>
+                <div class="grid-item" style="background-color: lightgray; padding: 20px;">5</div>
+                <div class="grid-item" style="background-color: lightgray; padding: 20px;">6</div>
+                
+            </div>
+        </section>
+
+        <section id="darkmode">
+            <h2>16. Dark Mode</h2>
+            <p>Bruk CSS variabler og media queries for å lage en mørk modus.</p>
+
+            <h3>Eksempel: Automatisk mørk modus</h3>
+            <pre><code>
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: white;
+            }
+        }
+            </code></pre>
+
+            <h3>Resultat:</h3>
+            <p>Endre systeminnstillingene til "Mørk modus" for å se effekten.</p>
+        </section>
+        
+        <section id="clippath">
+            <h2>18. Clip-path for bilder</h2>
+            <p>Clip-path lar oss klippe elementer i forskjellige former.</p>
+        
+            <h3>Eksempel: Sirkelformet bilde</h3>
+            <pre><code>
+        .clip-circle {
+            width: 150px;
+            height: 150px;
+            clip-path: circle(50%);
+        }
+            </code></pre>
+        
+            <h3>Resultat:</h3>
+            <div class="example">
+                <img src="https://via.placeholder.com/150" class="clip-circle" style="clip-path: circle(50%);">
+            </div>
+        </section>
+        
+        <section id="masking">
+            <h2>19. CSS Masking & Blending</h2>
+            <p>CSS gir oss mulighet til å maskere bilder og blande farger.</p>
+        
+            <h3>Eksempel: Maskering av bilde</h3>
+            <pre><code>
+        .masked-image {
+            mask-image: url('https://via.placeholder.com/150');
+        }
+            </code></pre>
+        
+            <h3>Eksempel: Blend mode</h3>
+            <pre><code>
+        .blend-mode {
+            background-color: red;
+            mix-blend-mode: multiply;
+        }
+            </code></pre>
+        </section>
+        
+        <section id="3dtransform">
+            <h2>20. 3D Transformasjoner</h2>
+            <p>Vi kan skape 3D-effekter med transformasjoner.</p>
+        
+            <h3>Eksempel: 3D Roterende boks</h3>
+            <pre><code>
+        .rotate-box {
+            transform: rotateY(45deg);
+            perspective: 500px;
+        }
+            </code></pre>
+        
+            <h3>Resultat:</h3>
+            <div class="example" style="width: 100px; height: 100px; background: lightblue; transform: rotateY(45deg); perspective: 500px;">
+            </div>
+        </section>
+        
+        <section id="csscounters">
+            <h2>21. CSS Counters</h2>
+            <p>CSS kan brukes til automatisk nummerering av listeelementer.</p>
+        
+            <h3>Eksempel: Nummerert liste</h3>
+            <pre><code>
+        ul {
+            counter-reset: section;
+        }
+        
+        li::before {
+            counter-increment: section;
+            content: "Del " counter(section) ": ";
+        }
+            </code></pre>
+        
+            <h3>Resultat:</h3>
+            <ul style="counter-reset: section;">
+                <li style="counter-increment: section;">Første del</li>
+                <li style="counter-increment: section;">Andre del</li>
+                <li style="counter-increment: section;">Tredje del</li>
+            </ul>
+        </section>
+        
+        <section id="advancedgrid">
+            <h2>22. Oppsett av nettsider med CSS Grid og flex</h2>
+            <p>CSS Grid lar oss lage komplekse layouter.</p>
+        
+            <a href="gridexample.html"><h3>Eksempel: Grid med områder</h3></a>
+            <a href="flexexample.html"><h3>Eksempel: Flexbox</h3></a>
+        </section>
+        
+        
+    </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 IT & Medieproduksjon</p>
+    </footer>
+      <script>
+        function toggleMenu() {
+            document.querySelector(".sidebar").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

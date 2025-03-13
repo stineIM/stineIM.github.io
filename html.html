@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT & Medieproduksjon</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Velkommen til IT & Medieproduksjon</h1>
+        <nav>
+            <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="theme-header">
+        <h2>HTML Fagstoff</h2>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduksjon</a></li>
+                <li><a href="#tekst">Tekstformatering</a></li>
+                <li><a href="#lenker">Lenker & Navigasjon</a></li>
+                <li><a href="#bilder">Bilder & Multimedia</a></li>
+                <li><a href="#skjema">Skjemaer</a></li>
+                <li><a href="#tabeller">Tabeller</a></li>
+                <li><a href="#semantisk">Semantisk HTML</a></li>
+                <li><a href="#iframe">Iframes</a></li>
+                <li><a href="#html5">HTML5 Nyheter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>1. Introduksjon til HTML</h2>
+            <p>HTML (HyperText Markup Language) er standard språket for å lage nettsider.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Min første nettside&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Velkommen!&lt;/h1&gt;
+        &lt;p&gt;Dette er en enkel HTML-struktur.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <h1>Velkommen!</h1>
+                <p>Dette er en enkel HTML-struktur.</p>
+            </div>
+        </section>
+
+        <section id="tekst">
+            <h2>2. Tekstformatering</h2>
+            <p>Her er noen måter å formatere tekst på:</p>
+            <pre><code>&lt;strong&gt;Fet tekst&lt;/strong&gt; - &lt;em&gt;Kursiv tekst&lt;/em&gt; - &lt;u&gt;Understreket&lt;/u&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <strong>Fet tekst</strong> - <em>Kursiv tekst</em> - <u>Understreket</u>
+            </div>
+        </section>
+
+        <section id="lenker">
+            <h2>3. Lenker & Navigasjon</h2>
+            <p>Hvordan lage lenker:</p>
+            <pre><code>&lt;a href="https://www.vg.no" target="_blank"&gt;Besøk VG&lt;/a&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <a href="https://www.vg.no" target="_blank">Besøk VG</a>
+            </div>
+        </section>
+
+        <section id="bilder">
+            <h2>4. Bilder & Multimedia</h2>
+            <p>Legge til et bilde:</p>
+            <pre><code>&lt;img src="bilde.jpg" alt="Beskrivelse av bildet" width="300"&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <img src="bilde.jpg" alt="Beskrivelse av bildet" width="300">
+            </div>
+        </section>
+
+        <section id="skjema">
+            <h2>5. Skjemaer & Input</h2>
+            <p>Hvordan lage et skjema:</p>
+            <pre><code>&lt;form action="#" method="post"&gt;
+    &lt;label for="navn"&gt;Navn:&lt;/label&gt;
+    &lt;input type="text" id="navn" name="navn" required&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Send inn"&gt;
+&lt;/form&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <form action="#" method="post">
+                    <label for="navn">Navn:</label>
+                    <input type="text" id="navn" name="navn" required>
+                    <br>
+                    <input type="submit" value="Send inn">
+                </form>
+            </div>
+        </section>
+        <section id="tabeller">
+            <h2>6. Tabeller</h2>
+            <p>Tabeller brukes for å organisere data på en ryddig måte.</p>
+            <pre><code>&lt;table border="1"&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Navn&lt;/th&gt;
+                    &lt;th&gt;Alder&lt;/th&gt;
+                    &lt;th&gt;Yrke&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ola&lt;/td&gt;
+                    &lt;td&gt;18&lt;/td&gt;
+                    &lt;td&gt;Student&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Kari&lt;/td&gt;
+                    &lt;td&gt;19&lt;/td&gt;
+                    &lt;td&gt;Designer&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Navn</th>
+                            <th>Alder</th>
+                            <th>Yrke</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ola</td>
+                            <td>18</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>Kari</td>
+                            <td>19</td>
+                            <td>Designer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="semantisk">
+            <h2>7. Semantiske HTML-elementer</h2>
+            <p>Semantiske HTML-elementer gir mening til nettsidestrukturen.</p>
+            <pre><code>&lt;article&gt;
+            &lt;h2&gt;Nyhetstittel&lt;/h2&gt;
+            &lt;p&gt;Dette er en kort nyhetsartikkel.&lt;/p&gt;
+        &lt;/article&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <article>
+                    <h2>Nyhetstittel</h2>
+                    <p>Dette er en kort nyhetsartikkel.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="iframe">
+            <h2>8. Iframes</h2>
+            <p>Integrering av en YouTube-video.</p>
+            <pre><code>&lt;iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section id="html5">
+            <h2>9. HTML5 Nyheter</h2>
+            <p>Et progress-bar eksempel:</p>
+            <pre><code>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</code></pre>
+            <h3>Resultat:</h3>
+            <div class="example">
+                <progress value="70" max="100"></progress>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IT & Medieproduksjon</p>
+    </footer>
+</body>
+
+</html>

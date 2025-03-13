@@ -1,0 +1,63 @@
+/* Generelle stiler */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Flex-container */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Styling for elementene */
+.header, .nav, .footer {
+    background-color: #0097A7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #007C91;
+    padding: 15px;
+}
+
+/* Innholdet settes i en flexbox */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Hovedinnhold + Sidebar */
+.main {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+}
+
+/* Responsivt design for mindre skjermer */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
